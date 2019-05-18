@@ -1,4 +1,4 @@
-package com.spikart.sweater;
+package com.spikart.sweater.controller;
 
 
 import com.spikart.sweater.domain.Message;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
 
     @Autowired
     private MessageRepository messageRepository;
