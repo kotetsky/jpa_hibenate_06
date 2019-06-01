@@ -7,9 +7,8 @@
 </div>
 <br/>
 <div>Список сообщений</div>
-<form method="post" action="/filter">
-    <input type="text" name="filter" placeholder="filter">
-    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+<form method="get" action="/main">
+    <input type="text" name="filter" placeholder="filter" value="${filter}">
     <button type="submit">Filter</button>
 </form>
 <br/>
