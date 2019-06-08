@@ -5,6 +5,6 @@
 Add new user
 <br/>
 <br/>
-${message}
+${message?ifExists}
 <@l.login "/registration" />
 </@c.page>
