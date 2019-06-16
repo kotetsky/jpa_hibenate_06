@@ -34,9 +34,6 @@ public class MainController {
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) {
             boolean dirCreationResult = uploadDir.mkdir();
-            System.out.println("dir creation result = " + dirCreationResult);
-        } else {
-            System.out.println("dir is created earlier");
         }
 
         return "greeting";

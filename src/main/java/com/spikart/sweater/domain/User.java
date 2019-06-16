@@ -10,6 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "usr")
 public class User implements UserDetails {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -33,6 +34,10 @@ public class User implements UserDetails {
 
     public String getUsername() {
         return username;
+    }
+
+    public boolean isAdmin() {
+        return roles.contains(Role.ADMIN);
     }
 
     @Override
